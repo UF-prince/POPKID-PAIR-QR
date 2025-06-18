@@ -180,16 +180,16 @@
   </div>
 
   <div class="container">
-    <h3>✨ POPKID PAIR SITE ✨</h3>
-    <p style="color: #ccfaff; text-shadow: 0 0 5px #ccfaff;">Enter your phone number with country code:</p>
+    <h3>👑 BILAL-MD 👑</h3>
+    <p style="color: #ccfaff; text-shadow: 0 0 5px #ccfaff;">♥️ ENTER YOUR WHATSAPP NUMBER BELOW ♥️:</p>
     <div class="input-area">
-      <input type="number" id="number" placeholder="+2547XXXXXXX">
+      <input type="number" id="number" placeholder="+923078071982">
       <button id="copy-direct">📱</button>
     </div>
-    <button id="submit-code">Get Code</button>
+    <button id="submit-code">GET PAIRING CODE</button>
 
     <main id="pair"></main>
-    <button id="play-btn">🎧 Play Song</button>
+    <button id="play-btn">😍 PLAY SONG 😍</button>
   </div>
 
   <audio id="audio-player">
@@ -197,7 +197,7 @@
   </audio>
 
   <footer>
-    <span style="color: #f06292; text-shadow: 0 0 3px #f06292;">POPKID</span> <span style="color: #4dd0e1; text-shadow: 0 0 3px #4dd0e1;">XTECH</span> <span style="color: #aed581; text-shadow: 0 0 3px #aed581;">MADE BY POPKID</span>
+    <span style="color: #f06292; text-shadow: 0 0 3px #f06292;">BILAL-MD</span> <span style="color: #4dd0e1; text-shadow: 0 0 3px #4dd0e1;">MULTIDEVICE</span> <span style="color: #aed581; text-shadow: 0 0 3px #aed581;">WHATSAPP BOT</span>
   </footer>
 
   <script>
@@ -254,14 +254,14 @@
     }
 
     async function getPairCode(number) {
-      pairContainer.innerHTML = `<span style="color: yellow;">Generating code...</span>`;
+      pairContainer.innerHTML = `<span style="color: yellow;">PLEASE WAIT...🌹</span>`;
       try {
         const response = await fetch(`/pair?phone=${number}`);
         const data = await response.json();
         return data.code || null;
       } catch (err) {
         console.error("Error fetching code:", err);
-        pairContainer.innerHTML = `<span style="color: red;">Failed to get code. Try later.</span>`;
+        pairContainer.innerHTML = `<span style="color: red;">BILAL-MD PAIRING CODE ERROR!!!</span>`;
         return null;
       }
     }
@@ -296,7 +296,7 @@
       const number = numberInput.value.trim();
 
       if (!number || number.length < 10) {
-        pairContainer.innerHTML = `<span style="color: red;">Enter a valid number to copy.</span>`;
+        pairContainer.innerHTML = `<span style="color: red;">YOUR NUMBER IS INCORRECT PLEASE TRY AGAIN LATER SORRY...😔</span>`;
         return;
       }
 
@@ -305,7 +305,7 @@
 
       if (code) {
         CopyCodeToClipboard(code);
-        pairContainer.innerHTML = `<span style="color: lime;">Code copied to clipboard!</span>`;
+        pairContainer.innerHTML = `<span style="color: lime;">BILAL-MD PAIRING CODE COPIED ✅</span>`;
         setTimeout(() => pairContainer.innerHTML = "", 3000); // Clear message after a few seconds
       }
     });
