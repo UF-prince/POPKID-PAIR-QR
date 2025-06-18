@@ -149,7 +149,7 @@ async function startnigg(phone) {
           await negga.sendMessage(
             negga.user.id,
             {
-              text: '*╭──────────────━┈⊷*\n*║ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ*\n*╰───────────────━⊷*\n\n*╭─────────────━┈⊷*\n║ᴏᴡɴᴇʀ: ᴘᴏᴘᴋɪᴅ\n*╰─────────────━┈⊷*\n\n*ᴛʜᴀɴᴋs ғᴏʀ ᴄʜᴏᴏsɪɴɢ ᴘᴏᴘᴋɪᴅ-ᴍᴅ*',
+              text: '*_BILAL-MD WHATSAPP BOT CONNECTED_*/n _SESSION ID SECCUSSFULLY RECIEVED_ /n *_DEVELOPER:-_* *_BILAL_* /n *_CONTACT:-*_ *_+92 3078071982_*',
             },
             { quoted: guru }
           )
